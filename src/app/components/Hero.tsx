@@ -76,7 +76,7 @@ export default function Hero() {
                 <div className="flex flex-col text-center">
                     <div ref={h2Ref}>
                         <h2 className="text-5xl font-bold mb-4">
-                            Hi, I'm Steven
+                            Hi, I&apos;m Steven
                         </h2>
                     </div>
                     <h3 ref={h3Ref} className="text-4xl mb-4">
