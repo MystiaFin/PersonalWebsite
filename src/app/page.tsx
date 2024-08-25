@@ -4,6 +4,8 @@ import Navbar from './components/NavBar';
 import Hero from './components/Hero';
 import './globals.css';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 export default function Home() {
     useEffect(() => {
@@ -27,6 +29,8 @@ export default function Home() {
             <div className='relative z-10'>
                 <Hero/>
                 <AboutMe/>
+                <Projects/>
+                <Contact/>
             </div>
         </>
     );
