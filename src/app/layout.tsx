@@ -8,7 +8,7 @@ const poppins = Poppins({ weight: ['400', '700'],
 
 export const metadata: Metadata = {
   title: "MystiaFin",
-  description: "Portfolio Website",
+  description: "Personal Portfolio Website",
 };
 
 export default function RootLayout({
