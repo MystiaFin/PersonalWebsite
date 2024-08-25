@@ -5,7 +5,6 @@ import { TextPlugin } from 'gsap/TextPlugin';
 
 gsap.registerPlugin(TextPlugin);
 
-
 export default function Hero() {
     const scrollTextRef = useRef<HTMLSpanElement>(null);
     const h2Ref = useRef<HTMLDivElement>(null);
@@ -41,7 +40,7 @@ export default function Hero() {
         );
 
         // Typing loop animation for scroll text
-        const scrollTextTimeline = gsap.timeline({repeat: -1, repeatDelay: 1});
+        const scrollTextTimeline = gsap.timeline({ repeat: -1, repeatDelay: 1 });
         scrollTextTimeline.to(scrollTextRef.current, {
             duration: 2,
             text: "scroll",
@@ -72,26 +71,26 @@ export default function Hero() {
 
     return (
         <>
-            <Element name="home" className="flex justify-center m-14 py-24 cursor-default" id='home'>
+            <Element name="home" className="flex justify-center m-4 sm:m-8 md:m-14 py-24 cursor-default" id='home'>
                 <div className="flex flex-col text-center">
                     <div ref={h2Ref}>
-                        <h2 className="text-5xl font-bold mb-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
                             Hi, I&apos;m Steven
                         </h2>
                     </div>
-                    <h3 ref={h3Ref} className="text-4xl mb-4">
+                    <h3 ref={h3Ref} className="text-2xl sm:text-3xl md:text-4xl mb-4">
                         Better known as <span ref={mystiaFinRef} className="relative inline-block">
                             <span className="mystia-fin">MystiaFin</span>
                             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-black"></span>
                         </span>
                     </h3>
-                    <h1 ref={h1Ref} className="text-7xl font-bold">
+                    <h1 ref={h1Ref} className="text-4xl sm:text-5xl md:text-7xl font-bold ">
                     </h1>
                 </div>
             </Element>
-            <div className="px-8 py-20 flex justify-end text-gray-500 scroll-text gap-3">
+            <div className="mb-10 sm:mb-64 md:mb-64 px-4 sm:px-6 md:px-8 py-10 sm:py-16 md:py-20 flex justify-end text-gray-500 scroll-text gap-3">
                 <span ref={scrollTextRef} className="font-source-code"></span>
-                <svg ref={svgIconRef} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                <svg ref={svgIconRef} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
             </div>
